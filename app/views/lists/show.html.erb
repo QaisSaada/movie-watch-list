@@ -17,10 +17,11 @@
 
 
     <div class="movies-grid">
-      <% @list.movies.each do |movie| %>
+      <% @list.bookmarks.each do |bookmark| %>
       <div class="box-poster">
-        <img class="img-poster" src="<%= movie.poster_url %>">
-        <p class="movie-path"><%= link_to movie.title, movie_path(movie) %></p>
+        <p class="comment"> <%= bookmark.comment %></p>
+        <img class="img-poster" src="<%= bookmark.movie.poster_url %>">
+        <p class="bookmark-path"><%= link_to bookmark.movie.title, movie_path(bookmark.movie) %></p>
       </div>
       <% end %>
     </div>
