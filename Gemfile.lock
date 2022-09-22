@@ -189,6 +189,9 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
+    simple_form (5.1.0)
+      actionpack (>= 5.2)
+      activemodel (>= 5.2)
     sprockets (4.1.1)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -237,6 +240,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rails (~> 7.0.4)
   rest-client
+  simple_form
   sprockets-rails
   stimulus-rails
   turbo-rails

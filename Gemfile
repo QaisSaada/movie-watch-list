@@ -68,4 +68,6 @@ end
 gem 'devise'
 gem 'rest-client'
 gem 'dotenv-rails'
+gem 'simple_form'
+
 
