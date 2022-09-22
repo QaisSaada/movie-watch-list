@@ -4,6 +4,7 @@ class ListsController < ApplicationController
   end
 
   def show
+    @list = List.find(params[:id])
   end
 
   def new
@@ -12,8 +13,9 @@ class ListsController < ApplicationController
 
   def create
     @list = List.new(list_params)
+    @list.user = current_user
     if @list.save
-      redirect_to list_path(@list)
+      redirect_to @list
     else 
       render :new 
     end

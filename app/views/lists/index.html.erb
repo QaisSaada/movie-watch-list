@@ -7,7 +7,7 @@
             <% end %>
           </li>
   <% @lists.each do |list| %>
-    <%= render list %>
+    <%= render "form", list: list %>
     <p>
       <%= link_to "Show this list", list, class: "btn btn-warning" %>
     </p>
