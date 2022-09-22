@@ -1,0 +1,11 @@
+<div id="lists">
+  <% @lists.each do |list| %>
+    <%= render list %>
+    <p>
+      <%= link_to "Show this list", list, class: "btn btn-warning" %>
+    </p>
+  <% end %>
+</div>
+
+<h2>Help us register new restaurants</h2>
+<%= link_to "New list", new_list_path, class: "btn btn-warning"%>
