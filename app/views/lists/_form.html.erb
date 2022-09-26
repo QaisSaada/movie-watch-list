@@ -1,5 +1,6 @@
 <%= form_with model: list do |f| %>
-  <%= f.label "name" %>
-  <%= f.text_field :name %>
-  <%= f.submit class: 'btn btn-primary' %>
+  <%= f.label "All Lists" %>
+    <p>
+    <%= link_to "Show this list", list, class: "btn btn-warning" %>
+    </p>  <%= f.text_field :name %>
 <% end %>
